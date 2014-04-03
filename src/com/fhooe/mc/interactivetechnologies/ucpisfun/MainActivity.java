@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -232,6 +233,10 @@ public class MainActivity extends ActionBarActivity {
 			}
 
 			return rootView;
+		}
+		
+		public void playButton(View v){
+			Log.e("ilias", "play play play");
 		}
 
 	}
