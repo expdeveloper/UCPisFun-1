@@ -1171,18 +1171,78 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int action_settings=0x7f0a0013;
         public static final int app_name=0x7f0a000d;
-        public static final int button_a=0x7f0a001c;
-        public static final int button_b=0x7f0a001d;
-        public static final int button_c=0x7f0a001e;
-        public static final int button_d=0x7f0a001f;
-        public static final int level1_subtitle=0x7f0a0018;
-        public static final int level1_title=0x7f0a0014;
-        public static final int level2_subtitle=0x7f0a0019;
-        public static final int level2_title=0x7f0a0015;
-        public static final int level3_subtitle=0x7f0a001a;
-        public static final int level3_title=0x7f0a0016;
-        public static final int level4_subtitle=0x7f0a001b;
-        public static final int level4_title=0x7f0a0017;
+        public static final int button_a=0x7f0a0014;
+        public static final int button_b=0x7f0a0015;
+        public static final int button_c=0x7f0a0016;
+        public static final int button_d=0x7f0a0017;
+        /**  CONTENT PER LEVEL 
+         */
+        public static final int content1=0x7f0a0018;
+        /**  QUESTIONS N' ANSWERS PER LEVEL 
+ LEVEL 1 
+         */
+        public static final int l1_q1=0x7f0a0019;
+        public static final int l1_q1_a1=0x7f0a001a;
+        public static final int l1_q1_a2=0x7f0a001b;
+        public static final int l1_q1_a3=0x7f0a001c;
+        public static final int l1_q1_a4=0x7f0a001d;
+        public static final int l1_q2=0x7f0a001e;
+        public static final int l1_q2_a1=0x7f0a001f;
+        public static final int l1_q2_a2=0x7f0a0020;
+        public static final int l1_q2_a3=0x7f0a0021;
+        public static final int l1_q2_a4=0x7f0a0022;
+        public static final int l1_q3=0x7f0a0023;
+        public static final int l1_q3_a1=0x7f0a0024;
+        public static final int l1_q3_a2=0x7f0a0025;
+        public static final int l1_q3_a3=0x7f0a0026;
+        public static final int l1_q3_a4=0x7f0a0027;
+        public static final int l1_q4=0x7f0a0028;
+        public static final int l1_q4_a1=0x7f0a0029;
+        public static final int l1_q4_a2=0x7f0a002a;
+        public static final int l1_q4_a3=0x7f0a002b;
+        public static final int l1_q4_a4=0x7f0a002c;
+        public static final int l1_q5=0x7f0a002d;
+        public static final int l1_q5_a1=0x7f0a002e;
+        public static final int l1_q5_a2=0x7f0a002f;
+        public static final int l1_q5_a3=0x7f0a0030;
+        public static final int l1_q5_a4=0x7f0a0031;
+        /**  LEVEL 2 
+         */
+        public static final int l2_q1=0x7f0a0032;
+        public static final int l2_q2=0x7f0a0033;
+        public static final int l2_q3=0x7f0a0034;
+        public static final int l2_q4=0x7f0a0035;
+        /**  LEVEL 3 
+         */
+        public static final int l3_q1=0x7f0a0036;
+        public static final int l3_q1_a1=0x7f0a0037;
+        public static final int l3_q1_a2=0x7f0a0038;
+        public static final int l3_q1_a3=0x7f0a0039;
+        public static final int l3_q1_a4=0x7f0a003a;
+        public static final int l3_q2=0x7f0a003b;
+        public static final int l3_q2_a1=0x7f0a003c;
+        public static final int l3_q2_a2=0x7f0a003d;
+        public static final int l3_q2_a3=0x7f0a003e;
+        public static final int l3_q2_a4=0x7f0a003f;
+        public static final int l3_q3=0x7f0a0040;
+        public static final int l3_q3_a1=0x7f0a0041;
+        public static final int l3_q3_a2=0x7f0a0042;
+        public static final int l3_q3_a3=0x7f0a0043;
+        public static final int l3_q3_a4=0x7f0a0044;
+        public static final int l3_q4=0x7f0a0045;
+        public static final int l3_q4_a1=0x7f0a0046;
+        public static final int l3_q4_a2=0x7f0a0047;
+        public static final int l3_q4_a3=0x7f0a0048;
+        public static final int l3_q5=0x7f0a0049;
+        public static final int l3_q5_a1=0x7f0a004a;
+        public static final int l3_q5_a2=0x7f0a004b;
+        public static final int l3_q5_a3=0x7f0a004c;
+        /**  LEVEL 4 
+         */
+        public static final int l4_q1=0x7f0a004d;
+        public static final int l4_q2=0x7f0a004e;
+        public static final int l4_q3=0x7f0a004f;
+        public static final int l4_q4=0x7f0a0050;
         public static final int title_activity_splash=0x7f0a000e;
         public static final int title_section1=0x7f0a000f;
         public static final int title_section2=0x7f0a0010;

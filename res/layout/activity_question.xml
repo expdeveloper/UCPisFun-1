@@ -54,20 +54,23 @@
         android:text="@string/button_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/btn_a"/>
+        android:layout_toRightOf="@id/btn_a"
+        android:layout_below="@id/answer_d"/>
     
     <Button 
         android:id="@+id/btn_c"
         android:text="@string/button_c"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/btn_b"/>
+        android:layout_toRightOf="@id/btn_b"
+        android:layout_below="@id/answer_d"/>
     
     <Button 
         android:id="@+id/btn_d"
         android:text="@string/button_d"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/btn_c"/>
+        android:layout_toRightOf="@id/btn_c"
+        android:layout_below="@id/answer_d"/>
     
 </RelativeLayout>

@@ -176,6 +176,7 @@ public class MainActivity extends ActionBarActivity {
 	 * A placeholder fragment containing a simple view.
 	 */
 	public static class PlaceholderFragment extends Fragment{
+		private String subTitleText = null;
 		/**
 		 * The fragment argument representing the section number for this
 		 * fragment.
@@ -197,8 +198,7 @@ public class MainActivity extends ActionBarActivity {
 		}
 
 		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
+		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.fragment_main, container,false);
 			
 			//reference textviews
@@ -208,6 +208,33 @@ public class MainActivity extends ActionBarActivity {
 			//reference layout
 			RelativeLayout relLayout = (RelativeLayout) rootView.findViewById(R.id.fragment);
 			
+			//styles current Fragment
+			if(getArguments().getInt(ARG_SECTION_NUMBER) == 1){
+				subTitleText = "Analysis";
+//				navBtn1.setEnabled(false);
+				title.setText("Level 1");
+				subTitle.setText(subTitleText);
+				relLayout.setBackgroundColor(Color.RED);
+			}else if(getArguments().getInt(ARG_SECTION_NUMBER) == 2){
+				subTitleText = "Design";
+//				navBtn2.setEnabled(false);
+				title.setText("Level 2");
+				subTitle.setText(subTitleText);
+				relLayout.setBackgroundColor(Color.CYAN);
+			}else if(getArguments().getInt(ARG_SECTION_NUMBER) == 3){
+				subTitleText = "Implementation";
+//				navBtn3.setEnabled(false);
+				title.setText("Level 3");
+				subTitle.setText(subTitleText);
+				relLayout.setBackgroundColor(Color.GREEN);
+			}else if(getArguments().getInt(ARG_SECTION_NUMBER) == 4){
+				subTitleText = "Deployment";
+//				navBtn4.setEnabled(false);
+				title.setText("Level 4");
+				subTitle.setText(subTitleText);
+				relLayout.setBackgroundColor(Color.YELLOW);
+			}
+			
 			//refernece play button and set on click listener
 			Button playBtn = (Button) rootView.findViewById(R.id.playButton);
 			playBtn.setOnClickListener(new OnClickListener() {
@@ -215,32 +242,11 @@ public class MainActivity extends ActionBarActivity {
 				@Override
 				public void onClick(View v) {
 					Intent intent = new Intent(getActivity(), ContentActivity.class);
+					intent.putExtra("level", getArguments().getInt(ARG_SECTION_NUMBER));
+					intent.putExtra("sub", subTitleText);
 					startActivity(intent);
 				}
 			});
-			
-			//adjust fragment's content
-			if(getArguments().getInt(ARG_SECTION_NUMBER) == 1){
-//				navBtn1.setEnabled(false);
-				title.setText("Level 1");
-				subTitle.setText("Analysis");
-				relLayout.setBackgroundColor(Color.RED);
-			}else if(getArguments().getInt(ARG_SECTION_NUMBER) == 2){
-//				navBtn2.setEnabled(false);
-				title.setText("Level 2");
-				subTitle.setText("Design");
-				relLayout.setBackgroundColor(Color.CYAN);
-			}else if(getArguments().getInt(ARG_SECTION_NUMBER) == 3){
-//				navBtn3.setEnabled(false);
-				title.setText("Level 3");
-				subTitle.setText("Implementation");
-				relLayout.setBackgroundColor(Color.GREEN);
-			}else if(getArguments().getInt(ARG_SECTION_NUMBER) == 4){
-//				navBtn4.setEnabled(false);
-				title.setText("Level 4");
-				subTitle.setText("Deployment");
-				relLayout.setBackgroundColor(Color.YELLOW);
-			}
 
 			return rootView;
 		}
