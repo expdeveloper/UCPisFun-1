@@ -18,4 +18,12 @@
         android:layout_height="wrap_content"
         />
     
+    <Button 
+        android:id="@+id/skipButton"
+        android:text="SKIP" 
+        android:layout_width="wrap_content"   
+        android:layout_height="wrap_content"
+        android:onClick="skipButton"
+        />
+    
 </LinearLayout>

@@ -1,7 +1,7 @@
 package com.fhooe.mc.interactivetechnologies.ucpisfun;
 
 import java.util.Locale;
-
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,11 +9,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -209,6 +208,17 @@ public class MainActivity extends ActionBarActivity {
 			//reference layout
 			RelativeLayout relLayout = (RelativeLayout) rootView.findViewById(R.id.fragment);
 			
+			//refernece play button and set on click listener
+			Button playBtn = (Button) rootView.findViewById(R.id.playButton);
+			playBtn.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					Intent intent = new Intent(getActivity(), ContentActivity.class);
+					startActivity(intent);
+				}
+			});
+			
 			//adjust fragment's content
 			if(getArguments().getInt(ARG_SECTION_NUMBER) == 1){
 //				navBtn1.setEnabled(false);
@@ -234,10 +244,24 @@ public class MainActivity extends ActionBarActivity {
 
 			return rootView;
 		}
-		
-		public void playButton(View v){
-			Log.e("ilias", "play play play");
-		}
 
+	}
+	
+	@Override
+	protected void onPause(){
+		super.onPause();
+		finish();
+	}
+	
+	@Override
+	protected void onStop(){
+		super.onStop();
+		finish();
+	}
+	
+	@Override
+	protected void onDestroy(){
+		super.onDestroy();
+		finish();
 	}
 }
