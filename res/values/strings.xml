@@ -39,30 +39,35 @@
     <string name="l1_q1_a2">B. Observation</string>
     <string name="l1_q1_a3">C. Understanding</string>
     <string name="l1_q1_a4">D. Design Concepts</string>
+    <string name="l1_q1_correct">D</string>
     
     <string name="l1_q2">2.	Which are the “key players” during the analysis?</string>
     <string name="l1_q2_a1">A. Project Managers</string>
     <string name="l1_q2_a2">B. Development Team</string>
     <string name="l1_q2_a3">C. Testers</string>
     <string name="l1_q2_a4">D. Product Managers</string>
+    <string name="l1_q2_correct">D</string>
     
     <string name="l1_q3">3.	The products features derive from what the</string>
     <string name="l1_q3_a1">A. stakeholders want</string>
     <string name="l1_q3_a2">B. design team wants</string>
     <string name="l1_q3_a3">C. project manager wants</string>
     <string name="l1_q3_a4">D. users want</string>
+    <string name="l1_q3_correct">D</string>
     
     <string name="l1_q4">4.	Analysis phase result in a</string>
     <string name="l1_q4_a1">A. design plan</string>
     <string name="l1_q4_a2">B. design solutions</string>
     <string name="l1_q4_a3">C. functional prototype</string>
     <string name="l1_q4_a4">D. beta version </string>
+    <string name="l1_q4_correct">A</string>
     
     <string name="l1_q5">5.	Common tools in this phase does not include</string>
     <string name="l1_q5_a1">A. interviews</string>
     <string name="l1_q5_a2">B. ethnographic research</string>
     <string name="l1_q5_a3">C. usability testing</string>
     <string name="l1_q5_a4">D. mock up designs </string>
+    <string name="l1_q5_correct">C</string>
     
     <!-- LEVEL 2 -->
     <string name="l2_q1">1.	The Design Phase is also known as</string>
@@ -76,28 +81,33 @@
     <string name="l3_q1_a2">B. Deploy</string>
     <string name="l3_q1_a3">C. Develop</string>
     <string name="l3_q1_a4">D. Release</string>
+    <string name="l3_q1_correct">C</string>
     
     <string name="l3_q2">2.	Which task is not part of the Implementation Phase?</string>
     <string name="l3_q2_a1">A. Development Monitoring</string>
     <string name="l3_q2_a2">B. Resolve technical issues</string>
     <string name="l3_q2_a3">C. Validate design solutions</string>
     <string name="l3_q2_a4">D. Other</string>
+    <string name="l3_q2_correct">D</string>
     
     <string name="l3_q3">3.	Which is not  “key player” in this phase?</string>
     <string name="l3_q3_a1">A. Product Managers</string>
     <string name="l3_q3_a2">B. Development Team</string>
     <string name="l3_q3_a3">C. Customers</string>
     <string name="l3_q3_a4">D. Users</string>
+    <string name="l3_q3_correct">C</string>
     
     <string name="l3_q4">4.	Is visual design part in this phase?</string>
     <string name="l3_q4_a1">A. Yes</string>
     <string name="l3_q4_a2">B. No</string>
     <string name="l3_q4_a3">C. Maybe</string>
+    <string name="l3_q4_correct">A</string>
     
     <string name="l3_q5">5.	Constant communication is required between the development team and </string>
     <string name="l3_q5_a1">A. customers</string>
     <string name="l3_q5_a2">B. stakeholders</string>
     <string name="l3_q5_a3">C. designers</string>
+    <string name="l3_q5_correct">C</string>
     
     <!-- LEVEL 4 -->
     <string name="l4_q1">A</string>

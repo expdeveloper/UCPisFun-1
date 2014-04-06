@@ -244,6 +244,7 @@ public class MainActivity extends ActionBarActivity {
 					Intent intent = new Intent(getActivity(), ContentActivity.class);
 					intent.putExtra("level", getArguments().getInt(ARG_SECTION_NUMBER));
 					intent.putExtra("sub", subTitleText);
+					intent.putExtra("currentQuestion", 1);
 					startActivity(intent);
 				}
 			});

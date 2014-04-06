@@ -9,6 +9,7 @@ import android.widget.TextView;
 public class ContentActivity extends Activity {
 	private int levelNum = -1;
 	private String subTitle = "";
+	private int currentQuestion = 0;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class ContentActivity extends Activity {
 		if(bundle != null){
 			levelNum = bundle.getInt("level");
 			subTitle = bundle.getString("sub");
+			currentQuestion = bundle.getInt("currentQuestion");
 		}
 		
 		TextView title = (TextView) findViewById(R.id.content_title);
@@ -35,6 +37,7 @@ public class ContentActivity extends Activity {
 		Intent intent = new Intent(this, QuestionActivity.class);
 		intent.putExtra("level", levelNum);
 		intent.putExtra("sub", subTitle);
+		intent.putExtra("currentQuestion", 1);
 		startActivity(intent);
 	}
 	
