@@ -1,7 +1,11 @@
 package com.fhooe.mc.interactivetechnologies.ucpisfun;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.TextView;
@@ -64,10 +68,31 @@ public class QuestionActivity extends Activity {
 		Button btnB = (Button) findViewById(R.id.btn_b);
 		Button btnC = (Button) findViewById(R.id.btn_c);
 		Button btnD = (Button) findViewById(R.id.btn_d);
+		
+		btnA.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				new AlertDialog.Builder(QuestionActivity.this)
+			    .setTitle("Delete entry")
+			    .setMessage("Are you sure you want to delete this entry?")
+			    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+			        public void onClick(DialogInterface dialog, int which) { 
+			            // continue with delete
+			        }
+			     })
+			    .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+			        public void onClick(DialogInterface dialog, int which) { 
+			            // do nothing
+			        }
+			     })
+			     .show();
+			}
+		});
 	}
 	
 	@Override
-	protected void onPause(){
+	protected void onPause(){ 
 		super.onPause();
 		finish();
 	}
