@@ -1,0 +1,1 @@
+This game is a representetion of a user centered design process. It is a quiz which help us learn more about this topic.
